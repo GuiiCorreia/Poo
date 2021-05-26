@@ -1,4 +1,7 @@
-//
+// digite uma sequencia quanto em linha quanto coluna que ele vai te mandar essa listao ao 
+// contrario, os dados invertidos
+// a logica usada foi criar um vetor e mostrar ele invertido
+// tentei fazer de uma forma mais organizada, mas nao funcionou do jeito que eu queria
 
 import java.util.Scanner;
 
