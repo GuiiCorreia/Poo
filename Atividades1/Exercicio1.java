@@ -1,5 +1,8 @@
 // primeiro vc escreve o valor da gasolina, na mesma linha mesmo ou na de baixo, coloca o valor 
 // do alcool e entao tera seu resultado
+// a logica foi pegar os valores, fazer o calculo e de acordo com o calculo
+// aparecer uma mensagem de qual combustivel compensa mais de acordo com o resultado menor ou mair
+// que 0.7
 
 import java.util.Scanner;
 
