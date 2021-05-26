@@ -2,6 +2,7 @@
 // nao consegui chegar em uma logica que mostrasse apenas o resultado
 // entao ele vai mostrar todos os valores do processo, e o ultimo sera o resultado
 // do fibonacci do numero desejado
+// a logica que usei foi apenas do calculo, mas n descobri em como mostrar so o resultado
 
 import java.util.Scanner;
 
