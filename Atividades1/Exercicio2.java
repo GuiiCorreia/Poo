@@ -1,7 +1,8 @@
 // pode colocar o valor que voce quiser sacar, como se fosse em um caixa eletronico
 // quando o valor for digitado, vai aparecer as notas e a quantidade delas que voce
 // vai precisar para chegar ao valor desejado
-// 
+// a logica usada foi ter os dados de todas as notas e colocar o calculo
+// se for precisar daquela nota, mostra a quantidade dela ate o valor ser menor q ele mesmo
 
 import java.util.Scanner;
 
