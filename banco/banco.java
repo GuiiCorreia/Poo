@@ -1,3 +1,9 @@
+// criei a interface inicial e tenho q relacionar ela com o conta.java
+// nao consegui fazer tudo por enquanto, mas estou pegando a ideia de 
+// orientada a objetos, vejo q isso ajuda muito e facilita no entendimento
+// e organização do codigo e praticando vou conseguir completar o objetivo 
+// dessa atividade
+
 import java.util.Scanner;
 
 public class banco {
