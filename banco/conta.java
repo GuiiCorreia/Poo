@@ -1,3 +1,8 @@
+ // criei as classes com os dados que eu quero, usuario, cpf, telefone, saldo e o endereço
+ // e coloquei mais ou menos por enquanto oq cada coisa vai fazer e relacionei eles
+ // pre configurei atos como sacar, depositar e fazer transferencia
+ // e coloquei uns calculos para esses dados acima sempre ficarem atualizados de acordo
+ // com oq o usuario quer fazer 
 
 class conta {
 
