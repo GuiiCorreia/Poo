@@ -5,7 +5,7 @@ import Publicacao.*;
 public class Biblioteca {
     private String endereco;
     private String nome;
-    private ArrayList<Publicacao> publica = new ArrayList<Publicacao>();
+    private ArrayList<Publicacao> publica;
 
 
     public Biblioteca(String nome, String endereco) {
