@@ -6,8 +6,8 @@ public abstract class Publicacao {
   private String titulo;
   private Date dataPublicacao;
   private long dataEntrega;
-  private ArrayList<Publicacao> publi = new ArrayList<Publicacao>();
-  private ArrayList<Autores> autor = new ArrayList<Autores>();
+  private ArrayList<Publicacao> publi;
+  private ArrayList<Autores> autor;
 
   public Publicacao(String titulo, Date dataPublicacao, ArrayList<Publicacao> publi, ArrayList<Autores> autor){
       this.titulo = titulo;
