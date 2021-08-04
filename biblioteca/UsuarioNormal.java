@@ -8,10 +8,10 @@ public class UsuarioNormal extends Usuario{
         //private String telefone;
         super(nome, cpf, email, telefone);
     }
-    public void setLimite(int limiteEmprestimo) {
+    public void setLimiteEmprestimo(int limiteEmprestimo) {
         this.limite = limiteEmprestimo;
     }
-    public int getLimite() {
+    public int getLimiteEmprestimo() {
         return limiteEmprestimo;
     }
 }
