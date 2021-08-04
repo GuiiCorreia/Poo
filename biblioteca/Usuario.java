@@ -9,7 +9,7 @@ public class Usuario {
     private String cpf;
     private String email;
     private String telefone;
-
+ 
 
     public Usuario(String nome, String cpf, String email, String telefone){
         this.nome = nome;
