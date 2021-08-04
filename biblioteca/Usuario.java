@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import Livros.*;
 import Publicacao.*;
 import Usuario.*;
-
+ 
 
 public class Usuario {
     private String nome;
