@@ -1,17 +1,13 @@
 
-public class UsuarioNormal extends Usuario{
-    private int limiteEmprestimo = 5;
+public class UsuarioComum extends Usuario{
+    private int limEmprestimo = 5;
     public UsuarioComum(String nome, String cpf, String email, String telefone){
-        //private String nome;
-        //private String cpf;
-        //private String email;
-        //private String telefone;
-        super(nome, cpf, email, telefone);
+        super(nome, cpf, email, telefone, 5, 5);
     }
-    public void setLimiteEmprestimo(int limiteEmprestimo) {
-        this.limite = limiteEmprestimo;
+    public void setLimiteEmprestimo(int limEmprestimo) {
+        this.limEmprestimo = limEmprestimo;
     }
-    public int getLimiteEmprestimo() {
-        return limiteEmprestimo;
+    public int getLimEmprestimo() {
+        return limEmprestimo;
     }
 }

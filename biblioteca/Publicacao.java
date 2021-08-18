@@ -4,15 +4,20 @@ import Publicacao.*;
 
 public abstract class Publicacao {
   private String titulo;
-  private Date dataPublicacao;
-  private long dataEntrega;
+  private LocalDate dataPublicacao;
+  private LocalDate dataEntrega;
   private ArrayList<Publicacao> publi;
   private ArrayList<Autores> autor;
+  private double valorMulta;
+  private boolean emprestada;
 
-  public Publicacao(String titulo, Date dataPublicacao, ArrayList<Publicacao> publi, ArrayList<Autores> autor){
+  public Publicacao(String titulo, LocalDate dataPublicacao, double valorMulta){
       this.titulo = titulo;
       this.dataPublicacao = dataPublicacao;
       this.publi = publi;
+      this.autor = autor;
+      this.valorMulta = valorMulta;
+      this.emprestada = true;
     }
   
   public void setTitulo(String titulo) {
@@ -41,17 +46,31 @@ public abstract class Publicacao {
     return dataEntrega;
   }
 
-  public void setAutor(Autores autor) {
-      this.autor.add(autor);
-  }
-
   public ArrayList<Autor> getAutor() {
     return autor;
   }
 
-  
-}
+  public boolean addAutor(Autor autor){
+      return this.autor.add(autor);
+  }
+  public boolean removeAutor(Autor autor){
+    return this.autor.remove(autor);
+  }
  
+  public double getValorMulta(){
+   return this.valorMulta;
+ }
+  public void setValorMulta(){
+    this.multa = multa;
+  }
+  public boolean getEmprestada(){
+    return this.emprestada;
+  }
+  public boolean isEmprestada(){
+    return this.emprestada;
+  }
+}
+
 
 
 

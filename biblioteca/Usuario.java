@@ -2,21 +2,26 @@ import java.util.ArrayList;
 import Livros.*;
 import Publicacao.*;
 import Usuario.*;
- 
 
-public class Usuario {
+
+public abstract class Usuario {
     private String nome;
     private String cpf;
     private String email;
     private String telefone;
- 
+    private int limEmprestimo;
+   private int limRenovacao;
+   private int qtdEmprestimos;
 
-    public Usuario(String nome, String cpf, String email, String telefone){
+
+    public Usuario(String nome, String cpf, String email, String telefone, int limEmprestimo, int limRenovacao){
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
         this.telefone = telefone;
-       
+        this.limEmprestimo = limEmprestimo;
+        this.limRenovacao = limRenovacao;
+        this.qtdEmprestimos = 0;
     }
 
     public void setNome(String nome) {
@@ -46,5 +51,24 @@ public class Usuario {
     public String getTelefone() {
         return telefone;
     }
-
+    public boolean fazerEmprestimo(){
+        if(this.qtdEmprestimos < this.limEmprestimo || this.limEmprestimo < 0){
+           this.qtdEmprestimos++;
+           return true;
+        }else{
+           return false;
+        }
+     }
+     public boolean devolverEmprestimo(){
+        this.qtdEmprestimos--;
+        return true;
+     }
+  
+     public int getlimEmprestimo() {
+        return this.limEmprestimo;
+     }
+  
+     public int getlimRenovacao() {
+        return this.limRenovacao;
+     }
 }

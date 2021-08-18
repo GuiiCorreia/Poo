@@ -6,12 +6,13 @@ public class Livros {
 private String titulo, editora, ISBN;
 ArrayList autores;
 
-public Livros(String titulo, String autores, String editora, String ISBN) {
+public Livros(String titulo, String autores, String editora, String ISBN, double valorMulta) {
     this.titulo = titulo;
     this.autores = new ArrayList<String>();
     this.autores.add(autores);
     this.editora = editora; 
     this.ISBN = ISBN;
+    this.valorMulta = valorMulta;
     setLimiteDias(3);
 }
 
